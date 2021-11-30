@@ -3,10 +3,10 @@ import './ZodiacCard.css'
 
 export default function ZodiacCard({ name, dates }) {
   return (
-    <div className="zodiac">
+    <div className="zodiac-card">
       <img src={`${process.env.PUBLIC_URL}/zodiac-signs/${name}.png`} alt={name} />
-      <span className="name">{name}</span>
-      <span>{dates}</span>
+      <div className="name">{name}</div>
+      <div>{dates}</div>
     </div>
   )
 }
